@@ -1,0 +1,5 @@
+SELECT 
+    DISTINCT(ID_PONTO_VENDA),
+    NOME_PONTO_VENDA,
+    PERFIL_PONTO_VENDA
+FROM {{ source('input', 'source') }}

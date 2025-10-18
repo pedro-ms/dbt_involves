@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: input
+    schema: dataset_teste
+    tables:
+      - name: source
+        identifier: source

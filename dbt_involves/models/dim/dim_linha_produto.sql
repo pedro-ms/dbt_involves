@@ -1,0 +1,5 @@
+SELECT 
+    DISTINCT(ID_LINHA_PRODUTO),
+    NOME_LINHA_PRODUTO,
+    MARCA_LINHA_PRODUTO
+FROM {{ source('input', 'source') }}
