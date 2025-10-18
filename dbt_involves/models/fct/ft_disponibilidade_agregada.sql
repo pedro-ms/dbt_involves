@@ -1,7 +1,6 @@
 SELECT
     ANO,
     MES,
-    ID_LINHA_PRODUTO,
     ID_PONTO_VENDA,
     COUNT(*) AS CONTAGEM_AGREGADA
 FROM {{ source('input', 'source') }} as s
@@ -13,5 +12,4 @@ AND MES = 9
 GROUP BY 
     ANO,
     MES,
-    ID_LINHA_PRODUTO,
     ID_PONTO_VENDA
